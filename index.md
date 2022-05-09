@@ -1,37 +1,470 @@
-## Welcome to GitHub Pages
+<html>
 
-You can use the [editor on GitHub](https://github.com/realsinger/realsinger.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+  <head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-### Markdown
+    <title>SchroWave</title>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <!-- Bootstrap core CSS -->
+    <link href="src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-```markdown
-Syntax highlighted code block
+    <!-- Custom styles for this template -->
+    <link href="src/css/scrolling-nav.css" rel="stylesheet">
 
-# Header 1
-## Header 2
-### Header 3
+  </head>
 
-- Bulleted
-- List
+  <body id="page-top">
 
-1. Numbered
-2. List
+<header class="bg-dark text-white">
+      <div class="container text-center">
+        <h1>DEMO of SchroWave</h1>
+		<p class="lead" align="justify">
+            Anonymous.  
+                </p>
+      </div>
+    </header>
 
-**Bold** and _Italic_ and `Code` text
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-15 mx-auto">
+            <p class="lead" align="justify">
+            This demo introduces SchroWave, which can generate realistic voice by solving two-stage conditional schrodinger bridge problems. 
+                </p><p class="lead" align="justify">
+                 In recent years, methods based on discrete diffusion models have achieved 
+  state-of-the-art performances in voice 
+  generation. 
+  In theory, the voice data can be transformed into the exact Gaussian prior distributions 
+  only when the diffusion 
+  time tends to infinity. But in real 
+  applications,
+   the Gaussian prior distribution can only be achieved approximately in a limited time duration run by these 
+   diffusion-based methods, thus 
+   resulting in sub-optimal sound quality. 
+    In this paper, we present the SchroWave to realize the continuous transformation 
+    from exact Dirac’s deltas 
+    to the target voice data distribution  
+    in finite time duration, 
+    conditioned on middle voice representation with different sizes.
+    At the same time, in order to overcome the difficulty in calculating the 
+    score on the low-dimensional manifold of voice data during the 
+    generation process, we propose 
+    to use a two-stage diffusion and generation method, while each stage implemented by 
+    solving a
+    conditional Schrodinger bridge problem. 
+    Our experiments on the public data set LJSpeech show that the effect is significant, 
+    and achieve the new state-of-the-art MOS of 4.53. 
+              </p><p class="lead" align="justify">
+              </p><p class="lead" align="justify">
+			  我们的ItoTTS和ItoWave的关键模块有两个，一个是用于预测log语音概率密度梯度值的深度神经网络，一个是基于该梯度值和
+			  反向Ito随机微分方程的采样算法。
+              </p><p class="lead" align="justify">
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+    </section>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/realsinger/realsinger.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    <br>  </br>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                    <h3>预测log语音概率密度梯度值的深度神经网络</h3>				
+					</p><p class="lead" align="justify">
+			  ItoTTS里的预测网络结构
+              </p><p class="lead" align="justify">
+                    <img src="src/itotts_arch.jpg" alt="Italian Trulli" width="750px">
+                    <br>  </br> 
+					</p><p class="lead" align="justify">
+			  ItoWave里的预测网络结构
+              </p><p class="lead" align="justify">
+			  <img src="src/itowave_arch.jpg" alt="Italian Trulli" width="750px">
+                </div>
+              </div>
+              <br>  </br>
+              <br>  </br>
+              </div>
+            </div>
 
-### Support or Contact
+        </div>
+      </div>
+    </section>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+
+
+
+        
+
+     <section id="samples" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-13 mx-auto">
+
+
+            <p class="lead" align="justify">
+               您可以试听下ItoTTS和ItoWave合成的一些声音样本，相应文本如下:
+            </p>
+            <style type="text/css">
+                .tg  {border-collapse:collapse;border-spacing:0;}
+                .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                .tg .tg-oe15{background-color:#f8f9fa;border-color:#f8f9fa;text-align:center;vertical-align:top}
+                audio { width: 130px; }
+            </style>
+
+			<p class="lead" align="justify">
+               1. but they proceeded in all seriousness, and would have shrunk from no outrage or atrocity in furtherance of their foolhardy enterprise.
+            </p>
+			<p class="lead" align="justify">
+               2. three cars for press photographers, an official party bus for white house staff members and others, and two press buses.
+            </p>
+			<p class="lead" align="justify">
+               3. a base station at a fixed location in dallas operated a radio network which linked together the lead car,
+            </p>
+			<p class="lead" align="justify">
+               4. the lifting had been so complete in this case that there was no trace of the print on the rifle itself when it was examined by latona.
+            </p>
+			<p class="lead" align="justify">
+               5. with the active cooperation of the responsible agencies and with the understanding of the people of the united states in their demands upon their president,
+            </p>
+
+              <br>  </br>
+
+	      
+	       <center>
+            <h3>ItoTTS和其他TTS系统的合成效果比较</h3>
+            <p></p>
+            <p></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>原始真人语音</th>
+                  <th>FastSpeech 2合成的语音</th>
+				  <th>Tacotron 2合成的语音</th>
+				  <th>ItoTTS合成的语音</th>
+                </tr>
+              </thead>
+              <tbody>
+					 <tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/fastspeech2/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/tacotron2/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itotts/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+			<tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/fastspeech2/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/tacotron2/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itotts/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+				<tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/fastspeech2/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/tacotron2/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itotts/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+				<tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/fastspeech2/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/tacotron2/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itotts/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+				<tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/fastspeech2/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/tacotron2/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itotts/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+              </tbody>
+            </table>
+
+             
+
+              <br>  </br>
+
+
+
+             
+
+
+            <h3>ItoWave和其他vocoder系统的合成效果比较</h3>
+            <p></p>
+            <p></p>
+            <table>
+              <thead>
+                <tr>
+                      <th>原始真人语音</th>
+                  <th>WaveNet合成的语音</th>
+				  <th>WaveGlow合成的语音</th>
+				  <th>DiffWave合成的语音</th>
+				  <th>WaveGrad合成的语音</th>
+                  <th>ItoWave合成的语音</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavenet/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/waveglow/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/diffwave/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavegrad/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itowave/LJ010-0062.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+                 <tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavenet/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/waveglow/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/diffwave/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavegrad/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itowave/LJ030-0100.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+				<tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavenet/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/waveglow/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/diffwave/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavegrad/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itowave/LJ030-0106.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+				<tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavenet/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/waveglow/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/diffwave/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavegrad/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itowave/LJ032-0137.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+				<tr style="border-top:1px solid black">
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/groundtruth/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavenet/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/waveglow/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/diffwave/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/wavegrad/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/waves_for_github/itowave/LJ050-0277.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+              </tbody>
+            </table>
+
+              <br>
+
+           
+
+            <br>  </br>
+
+
+			<h3>ItoTTS合成较长的语音</h3>
+            <p></p>
+            <p></p>
+                      
+			<p class="lead" align="justify">
+				例如7.12北京大暴雨（from china daily）：Beijing took multiple measures on Monday to cope with the heaviest rain to hit the capital this year. The downpours, along with strong winds, started on Sunday night and are forecast to last until Tuesday morning. From 6 pm on Sunday to 7 pm on Monday, an average of 100.4 millimeters of rain fell across the capital, according to the city's meteorological bureau. However, by late Monday afternoon there was no deep surface water on major roads in urban areas, after city authorities activated pumping stations. Flood warnings were also issued for residents of high-risk areas. Kindergartens and primary and secondary schools in the city suspended classes on Monday and company employees were encouraged to work from home or alter their travel times.
+            </p>
+						<td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/beijing_rain.wav"
+                        type="audio/wav"></audio></td>
+			</center>
+          </div>
+        </div>
+      </div>
+    </section>
+	</center>
+	
+	
+	
+	<br>  </br>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3>ItoTTS和ItoWave将白噪声变成有意义语音的过程</h3>
+					   </p><p class="lead" align="justify">
+					   以“to be or not to be, this is a big problem”为输入文本，ItoTTS从高斯噪声信号中逐步生成对应mel谱图的过程
+			  </p><p class="lead" align="justify">
+                      <img src="src/tobe_itotts_step1.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step100.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step200.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step300.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step400.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step500.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step600.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step700.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step800.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step900.png" alt="Italian Trulli" width="500px">
+					  <img src="src/tobe_itotts_step1000.png" alt="Italian Trulli" width="500px">
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </section>
+
+ <br>  </br>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      </p><p class="lead" align="justify">
+			  以LJSpeech中句子LJ032-0167的频谱为输入，ItoWave从高斯噪声信号中逐步生成相应的语音的过程。 相应的文本是“he concluded, quote, there is no doubt in my mind that these fibers could have come from thisshirt.”
+              </p><p class="lead" align="justify">
+					  <img src="src/predicted_LJ032-0167_step1.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step100.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step200.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step300.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step400.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step500.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step600.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step700.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step800.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step900.png" alt="Italian Trulli" width="500px">
+					  <img src="src/predicted_LJ032-0167_step1000.png" alt="Italian Trulli" width="500px">
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </section>
+	
+	
+	
+
+    <section id="Reference" class="bg-white">
+      <center><h3>发表该技术的相关论文</h3></center>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-13 mx-auto">
+              <p class="lead" align="justify">
+		  <p class="lead" align="justify">
+			    [1]. Anonymous. Schr\"oWave: Realistic Voice Generation by Solving Two-Stage Conditional Schr\"odinger Bridge Problems.
+                    </p>
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <!-- <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p> -->
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="src/vendor/jquery/jquery.min.js"></script>
+    <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="src/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="src/js/scrolling-nav.js"></script>
+
+  </body>
+</html>
