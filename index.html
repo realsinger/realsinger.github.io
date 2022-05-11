@@ -33,8 +33,8 @@
         <div class="row">
           <div class="col-md-15 mx-auto">
             <p class="lead" align="justify">
-            This demo introduces RealSinger, which can generate ultra-realistic singing voice with a given music score as input. 
-The music score contains lyrics, note and duration.
+            This demo introduces RealSinger, which can generate ultra-realistic singing voice with given music scores as input. 
+The music score contains lyrics, notes and duration.
                 </p><p class="lead" align="justify">
         
      <section id="samples" class="bg-light">
@@ -55,35 +55,50 @@ The music score contains lyrics, note and duration.
             </style>
 
 			<p class="lead" align="justify">
-               1. but they proceeded in all seriousness, and would have shrunk from no outrage or atrocity in furtherance of their foolhardy enterprise.
+               1. 抱一抱, 就当作从没有在一起, 好不好, 要解释都已经来不及.
             </p>
 			<p class="lead" align="justify">
-               2. three cars for press photographers, an official party bus for white house staff members and others, and two press buses.
+               2. 是我太傻, 说不上爱别说谎, 就一点喜欢, 说不上恨别纠缠.
             </p>
 			<p class="lead" align="justify">
-               3. a base station at a fixed location in dallas operated a radio network which linked together the lead car,
+               3. 好不好, 有亏欠我们都别再追究, 算了吧, 我付出再多都不足够.
             </p>
 			<p class="lead" align="justify">
-               4. the lifting had been so complete in this case that there was no trace of the print on the rifle itself when it was examined by latona.
+               4. 就一点喜欢, 说不上恨别纠缠, 别装作感叹.
             </p>
 			<p class="lead" align="justify">
-               5. with the active cooperation of the responsible agencies and with the understanding of the people of the united states in their demands upon their president,
+               5. 当我不在你会不会难过, 你够不够我这样洒脱, 说不上爱别说谎.
+            </p>
+<p class="lead" align="justify">
+               6. 因为成长, 我们忽尔间说散就散.
+            </p>
+			<p class="lead" align="justify">
+               7. 不去想, 他们拥有美丽的太阳, 我看见, 每天的夕阳也会有变化.
+            </p>
+			<p class="lead" align="justify">
+               8. 我终于翱翔, 用心凝望不害怕, 哪里会有风, 就飞多远吧.
+            </p>
+			<p class="lead" align="justify">
+               9. 我终于看到, 所有梦想都开花, 追逐的年轻, 歌声多嘹亮.
+            </p>
+			<p class="lead" align="justify">
+               10. 每一次, 都在徘徊孤单中坚强, 每一次, 就算很受伤也不闪泪光.
             </p>
 
               <br>  </br>
 
 	      
 	       <center>
-            <h3>ItoTTS和其他TTS系统的合成效果比较</h3>
+            <h3>Comparison between RealSinger and other systems</h3>
             <p></p>
             <p></p>
             <table>
               <thead>
                 <tr>
-                  <th>原始真人语音</th>
-                  <th>FastSpeech 2合成的语音</th>
-				  <th>Tacotron 2合成的语音</th>
-				  <th>ItoTTS合成的语音</th>
+                  <th>Ground truth</th>
+                  <th>FFT-Singer</th>
+				  <th>DiffSinger</th>
+				  <th>RealSinger</th>
                 </tr>
               </thead>
               <tbody>
@@ -308,76 +323,24 @@ The music score contains lyrics, note and duration.
           </div>
         </div>
       </div>
-    </section>
-	</center>
+
 	
 	
 	
-	<br>  </br>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h3>ItoTTS和ItoWave将白噪声变成有意义语音的过程</h3>
-					   </p><p class="lead" align="justify">
-					   以“to be or not to be, this is a big problem”为输入文本，ItoTTS从高斯噪声信号中逐步生成对应mel谱图的过程
-			  </p><p class="lead" align="justify">
-                      <img src="src/tobe_itotts_step1.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step100.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step200.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step300.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step400.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step500.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step600.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step700.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step800.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step900.png" alt="Italian Trulli" width="500px">
-					  <img src="src/tobe_itotts_step1000.png" alt="Italian Trulli" width="500px">
-                    </div>
-                  </div>
-                </div>
 
-            </div>
-          </div>
-        </section>
-
- <br>  </br>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      </p><p class="lead" align="justify">
-			  以LJSpeech中句子LJ032-0167的频谱为输入，ItoWave从高斯噪声信号中逐步生成相应的语音的过程。 相应的文本是“he concluded, quote, there is no doubt in my mind that these fibers could have come from thisshirt.”
-              </p><p class="lead" align="justify">
-					  <img src="src/predicted_LJ032-0167_step1.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step100.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step200.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step300.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step400.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step500.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step600.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step700.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step800.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step900.png" alt="Italian Trulli" width="500px">
-					  <img src="src/predicted_LJ032-0167_step1000.png" alt="Italian Trulli" width="500px">
-                    </div>
-                  </div>
-                </div>
-
-            </div>
-          </div>
-        </section>
 	
 	
 	
 
     <section id="Reference" class="bg-white">
-      <center><h3>发表该技术的相关论文</h3></center>
+      <center><h3>Related paper</h3></center>
 
       <div class="container">
         <div class="row">
           <div class="col-lg-13 mx-auto">
               <p class="lead" align="justify">
 		  <p class="lead" align="justify">
-			    [1]. Anonymous. Schr\"oWave: Realistic Voice Generation by Solving Two-Stage Conditional Schr\"odinger Bridge Problems.
+			    [1]. Anonymous. RealSinger: Ultra-Realistic Singing Voice Generation via Stochastic Differential Equations.
                     </p>
               </p>
           </div>
